@@ -1,6 +1,6 @@
 # MTase Classification Pipeline
 
-This repository provides a pipeline for the classification of Methyltransferases (MTases) using Hidden Markov Models (HMMs). The pipeline consists of three main steps: installing the required packages, conducting HMMer searches, and detecting regions for classification.
+This repository provides a pipeline for the classification of Eukaryotic Methyltransferases (MTases) using Hidden Markov Models (HMMs). The pipeline consists of three main steps: installing the required packages, conducting HMMer searches, and detecting regions for classification.
 
 ## Table of Contents
 
