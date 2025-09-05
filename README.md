@@ -33,7 +33,7 @@ Conduct the HMMer search to identify Methyltransferase sequences. Use the follow
 ```bash
 !hmmsearch --cpu 3 -E 0.01 --domE 0.01 --incE 0.01 --incdomE 0.01 \
         -o /dev/null --noali -A file.stk \
-        /content/MTase-classification/HMM_profiles/selected_profiles.hmm /content/MTase-classification/Sample_MTases/MTase_sequences.fasta
+        /content/Eukaryotic-MTase-classification/HMM_profiles/selected_profiles.hmm /content/Eukaryotic-MTase-classification/Sample_MTases/MTase_sequences.fasta
 ```
 
 ## Region Detection
@@ -41,8 +41,8 @@ Conduct the HMMer search to identify Methyltransferase sequences. Use the follow
 After running the HMMer search, the next step is to detect regions in the alignment. Use this command:
 
 ```bash
-!./MTase-classification/Scripts/get_aln_regions.py \
-  /content/MTase-classification/profile-markup/All_profile_region.csv \
+!./Eukaryotic-MTase-classification/Scripts/get_aln_regions.py \
+  /content/Eukaryotic-MTase-classification/profile-markup/All_profile_region.csv \
   /content/file.stk > region_alignments.tsv
 ```
 
@@ -51,7 +51,7 @@ After running the HMMer search, the next step is to detect regions in the alignm
 Finally, perform the classification of the detected regions with the following command:
 
 ```bash
-!python ./MTase-classification/Scripts/classification.py \
+!python ./Eukaryotic-MTase-classification/Scripts/classification.py \
   --t /content/region_alignments.tsv \
   --m several_cat_domains.tsv \
   --c class.tsv
