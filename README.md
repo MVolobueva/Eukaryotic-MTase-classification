@@ -16,7 +16,7 @@ This repository provides a pipeline for the classification of Eukaryotic Methylt
 Before running the pipeline, you will need to install the required packages. Execute the following commands in your Colab Notebook:
 
 ```bash
-!git clone https://github.com/MVolobueva/MTase-classification.git
+!git clone https://github.com/MVolobueva/Eukaryotic-MTase-classification.git
 !sudo apt-get -y install hmmer
 !git clone https://github.com/isrusin/etsv
 !python3 -m pip install -e etsv
