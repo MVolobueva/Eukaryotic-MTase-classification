@@ -151,9 +151,14 @@ def assign_class(model_id, regions, region_coords):
                     return 'D'
             else:
                 return 'D'
+    if model_id in ["DRM-MTase-profile"] and regions.count(',') > 2:
+        if (regions[:5] == 'S3-S1') or (regions[-3:] == 'Hu2'):
+          return "R"
     if model_id in [46303, 46923, 45633] and regions.count(',') > 2:
         if regions[:3] == 'Hd1':
-            return 'F'
+          if (regions[-9:] == 'cat_motif'):
+            return "R"
+          return 'F'
         else:
             return 'C'
     if model_id in ["New-MTase-profile"] and regions.count(',') > 2:
