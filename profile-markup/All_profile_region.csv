@@ -95,3 +95,9 @@ New-MTase-profile	AF-B4EFP2-F1	motif	cat_motif	68-71
 New-MTase-profile	AF-B4EFP2-F1	motif	sam_motif	6-13
 New-MTase-profile	AF-B4EFP2-F1	catdomain	catdomain-2	14-41
 New-MTase-profile	AF-B4EFP2-F1	catdomain	catdomain-3	42-67
+DRM-MTase-profile	7L4C	catdomain	S3-S1	1-56
+DRM-MTase-profile	7L4C	catdomain	Hd1-S5	187-209
+DRM-MTase-profile	7L4C	motif	sam_motif	207-214
+DRM-MTase-profile	7L4C	catdomain	Hd2-S4	217-288
+DRM-MTase-profile	7L4C	catdomain	Hu2	289-329
+DRM-MTase-profile	7L4C	motif	cat_motif	285-288
